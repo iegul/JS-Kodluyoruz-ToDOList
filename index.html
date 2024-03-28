@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript To Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-2" style="background-color: rgb(255, 225, 115)">
+      <h1 style="text-align: center; color:rgb(99, 38, 0)" "mb-5">Yapılacaklar Listesi</h1>
+      <div class="input-group mb-5">
+        <input
+          type="text"
+          id="todoInput"
+          class="form-control"
+          placeholder="Bugün ne yapacaksın"
+        />
+        <div class="input-group-append">
+          <button class="btn btn-warning" type="button" onclick="addTodo()">
+            Ekle
+          </button>
+        </div>
+      </div>
+      <ul id="todoList" class="list-group">
+        <!-- Yapılacaklar buraya eklenecek -->
+      </ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
